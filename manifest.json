@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "X India Checker",
+  "description": "Flags likely India-based X accounts from visible profile metadata.",
+  "version": "0.1.0",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://*.workers.dev/*"
+  ],
+  "action": {
+    "default_title": "X India Checker",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

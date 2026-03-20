@@ -1,0 +1,10 @@
+name = "x-india-cache"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "CACHE_KV"
+id = "YOUR_KV_NAMESPACE_ID_HERE"
+
+[vars]
+ENVIRONMENT = "production"
