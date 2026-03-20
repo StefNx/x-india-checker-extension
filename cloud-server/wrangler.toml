@@ -4,7 +4,7 @@ compatibility_date = "2024-01-01"
 
 [[kv_namespaces]]
 binding = "CACHE_KV"
-id = "YOUR_KV_NAMESPACE_ID_HERE"
+id = "934430f497754fe197a42c3c47ca396e"
 
 [vars]
 ENVIRONMENT = "production"
